@@ -5,6 +5,10 @@ ______________________________________________________________
 
 ## VIRTUAL MACHINES vs. CONTAINERS ##
 
+<p align="center">
+    <img src="Images/containers-vm.jpeg">
+</p>
+
 <dl>
   <dt>Virtual machine Deployment</dt>
   <dd>Virtualizing the hardware. <br>
@@ -15,7 +19,7 @@ ______________________________________________________________
     Lightweight deployment<br>
     No need to install OS on containers. The containers share the kernel of the underlying OS, you just need to install the additional packages or dependencies of the application that you'll be 'containing'.</dd>
 </dl>           
-##
+
 *************************************************************
 ## DOCKER ##
 
