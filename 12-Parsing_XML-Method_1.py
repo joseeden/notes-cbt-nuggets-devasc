@@ -38,7 +38,7 @@ xml = ET.parse(stream)
 # Get the 'root' Element object from the ElementTree
 root = xml.getroot()
 
-# Iterate through eachc hild of the 'root' Element'
+# Iterate through each child of the 'root' Element'
 # This will basically go through all the subelements ('Person') under the root ('People').
 for e in root:
 
