@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>                      <! Prolog - recommended >
+
+<!*****************************************************************************************************************>
+
+<! 8-Sample.xml >
+
+<!*****************************************************************************************************************>
+
+<! 2021-01-07 00:40:36 >
+
+
+<People>                                                    <! This is the ROOT TAG - Mandatory >
+    <Person Id="1">
+        <FirstName>John</FirstName>
+        <LastName>Smith</LastName>
+        <Email>john.smith@yahoo.com</Email>
+    </Person>
+
+    <Person Id="2">                                         <! Tags can have attribute, like 'Id' >
+        <FirstName>Jane</FirstName>
+        <LastName>Doe</LastName>
+        <Email>jane.doe@yahoo.com</Email>
+    </Person>
+
+    <Person Id="3">                                         <! Tags can be nested >
+        <FirstName>Jeff</FirstName>
+        <LastName>Park</LastName>
+        <Email>jeff.park@yahoo.com</Email>
+    </Person>
+
+</People>
+
+<!*****************************************************************************************************************>

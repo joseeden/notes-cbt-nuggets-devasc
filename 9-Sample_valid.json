@@ -1,0 +1,26 @@
+{"People":
+    [                                            
+        {                                           
+            "Id": 1,
+            "FirstName": "John",                    
+            "LastName": "Smith",                    
+            "Email": "john.smith@yahoo.com",
+            "Active": true
+        },                                          
+        {                                           
+            "Id": 2,                                                                  
+            "FirstName": "Jane",
+            "LastName": "Doe",
+            "Email": "jane.doe@yahoo.com",
+            "Active": false
+        },
+        {                                           
+            "Id": 3,
+            "FirstName": "Jeff",                    
+            "LastName": "Park",                     
+            "Email": "jeff.park@yahoo.com",
+            "Active": true        
+        }                                          
+        
+    ]  
+}

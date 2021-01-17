@@ -1,0 +1,34 @@
+---
+
+#*****************************************************************************************************************#
+
+# 10-Sample.yaml
+
+#*****************************************************************************************************************#
+
+# 2021-01-07 05:01:13
+
+
+people:
+- id: 1
+  Code: 2.5  
+  FirstName: John
+  LastName: Smith
+  Email: john.smith@yahoo.com
+  Active: true
+- id: 2
+  Code: 4.6 
+  FirstName: Jane 
+  LastName: Doe 
+  Email: jane.doe@yahoo.com
+  Active: false 
+- id: 3
+  Code: 56.5
+  FirstName: Jeff 
+  LastName: Park 
+  Email: jeff.park@yahoo.com
+  Active: true
+...
+--- # this is the start of a new document in YAML
+item1: item1value
+item2: item2value

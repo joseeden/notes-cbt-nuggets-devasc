@@ -1,0 +1,124 @@
+
+#******************************************************************************************************************#
+
+# 11-Parsing_XML_with_Python
+
+#******************************************************************************************************************#
+
+# 2021-01-07 14:05:05
+
+
+SERIALIZATION 
+
+Creating the data from the program of your choice and pass that out to a plain-text data format.
+
+
+DESERIALIZATION
+
+Reading the data in from a plain-text data format
+
+#------------------------------------------------------------------------------------------------------------------
+
+PARSE XML WITH PYTHON 
+
+There are three method we can use in parsing xml with python/
+
+For METHOD 1, we'll be using  python module 'xml' built-in library
+We'll use the sample below. Note that this code can also be seen in a separate file, "12-Parsing_XML-Method_1"
+This method is good for working on small xml files that are not necessarily going to run in the production system.
+
+For METHOD 2, we'll be using an expanded version of ElementTree, called 'lxml'
+This is generally preferred when working with xml files - aimed for production systems.
+
+For METHOD 3, we'll use another external library, called 'xmltodict'
+This works a little different with the first two methods as it reads the xml file into 
+an ordered dictionary inside of Python.
+
+#------------------------------------------------------------------------------------------------------------------
+
+METHOD 1
+
+#------------------------------------------------START OF CODE----------------------------------------------------#
+
+# 12-Parsing_XML-Method_1
+
+# Importing the ElementTree function and assigning it with ET as alias
+import xml.etree.ElementTree as ET 
+
+# Get the xml file data.
+stream = open('Sample.xml', 'r')
+
+# Parse the data into an ElementTree object
+xml = ET.parse(stream)
+
+# Get the 'root' Element object from the ElementTree
+root = xml.getroot()
+
+# Iterate through eachc hild of the 'root' Element'
+# This will basically go through all the subelements ('Person') under the root ('People').
+for e in root:
+
+    # Print the stringified version of the element
+    print(ET.tostring(e))
+
+    # Print the id attribute of the Element object
+    print(e.get("Id"))
+    print("")
+
+#-------------------------------------------------END OF CODE----------------------------------------------------#
+
+METHOD 2
+
+#------------------------------------------------START OF CODE----------------------------------------------------#
+
+# 13-Parsing_XML-Method_2
+
+# The rest of the code is almost the same as with Method 1
+from lxml import etree as ET
+
+# Get the xml file data.
+stream = open('Sample.xml', 'r')
+
+# Parse the data into an ElementTree object
+xml = ET.parse(stream)
+
+# Get the 'root' Element object from the ElementTree
+root = xml.getroot()
+
+# Iterate through eachc hild of the 'root' Element'
+# This will basically go through all the subelements ('Person') under the root ('People').
+for e in root:
+
+    # Print the stringified version of the element
+    print(ET.tostring(e))
+
+    # Print the id attribute of the Element object
+    print(e.get("Id"))
+    print("")
+
+#-------------------------------------------------END OF CODE----------------------------------------------------#
+
+METHOD 3
+
+#------------------------------------------------START OF CODE----------------------------------------------------#
+
+# 14-Parsing_XML-Method_3
+
+import xmltodict
+
+# Get the xml file data
+stream = open('Sample.xml', 'r')
+
+# Parse the xml file into an ordered dictionary.
+xml = xmltodict.parse(stream.read())
+
+# Iterate over the item in 'People':
+for e in xml["People"]:
+    print(e)
+    print("")
+
+# Iterate over the item inside each subelement "Person" under the root "People"
+for e in xml["People"]["Person"]:
+    print(e)
+
+#-------------------------------------------------END OF CODE----------------------------------------------------#
