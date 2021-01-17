@@ -6,6 +6,10 @@ ________________________________________________________
 
 ## WHY NETWORK AUTOMATION? ##
 
+<p align=center>
+    <img src="Images/network-automation.png">
+</p>
+
 1. **FASTER**
     Automation gets work done easier, faster.
     <br>
