@@ -12,7 +12,7 @@ In charge of the decision process on how to forward data between network devices
 In charge of actually doing the forwarding based on the information or instructions provided by the control plane.
 
 **MANAGEMENT PLANE**
-Interaction with management of the network devices to make changes or get status updates from the network devices. This used the following:
+Interaction with management of the network devices to make changes or get status updates from the network devices. This uses the following:
 - SNMP
 - Netconf
 - SSH

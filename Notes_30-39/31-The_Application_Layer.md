@@ -9,7 +9,7 @@ _________________________________________________________
     <img src="../Images/application-layer.png">
 </p>
 
-Think of the application later as **services**.
+Think of the application later as **a set of services**.
 Examples of application layer services include:
 - HTTP/HTTPS
 - telnet/ssh
