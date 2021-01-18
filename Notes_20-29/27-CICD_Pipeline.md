@@ -6,7 +6,7 @@ _____________________________________________________
 
 This is the practice of **Continuous Integration and Continuous Deployment** - constantly updating your software and integrating and rolling out as frequently as possible.
 
-![](Images/CICD.png)
+![](../Images/CICD.png)
 
 This shortens time between the development of feature or a fix and going live to production.
 
@@ -20,7 +20,7 @@ Automating the combination of code changes from multiple contributors into a sin
 Let's say you are working with a team, and you are all working on a single codebase simultaneously. As each member updates the code, there could be a tendency for one change to conflict with another's change.
 
 This is where CI comes in. The faster you can resolve the conflicts, merge and integrate everyone's code, and test it, the better the code output will be.
-![](Images/CI.png)
+![](../Images/CI.png)
 
 It is also possible that you're only person working on the code and you need to merge your changes with the code you last updated a couple months ago.
 _______________________________________________________

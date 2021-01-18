@@ -1,10 +1,14 @@
 
-# 1-Class_State_and_Behavior #
+# 1 - Class State and Behavior #
 ____________________________________________________________
 
 <!-- 2021-01-04 04:26:12 -->
 
 ## CLASS vs. OBJECTS ##
+
+<p align=center>
+    <img src="../Images/class-objects.png">
+</p>
 
 **CLASS** 
 Your class definition is the blueprint itself - basically, the blueprint is not the house.

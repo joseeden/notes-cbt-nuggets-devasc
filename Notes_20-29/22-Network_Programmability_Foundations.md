@@ -7,7 +7,7 @@ ________________________________________________________
 ## WHY NETWORK AUTOMATION? ##
 
 <p align=center>
-    <img src="Images/network-automation.png">
+    <img src="../Images/network-automation.png">
 </p>
 
 1. **FASTER**

@@ -1,10 +1,14 @@
 
-# 0-Why-use-OOP #
+# 0 - Why use OOP? #
 ___________________________________________________________
 
 <!-- 2021-01-04 04:16:04 -->
 
 ## OOP ##
+
+<p align=center>
+    <img src="../Images/oop.png">
+</p>
 
 It is an architectural style supported by many programming languages. The key concept of OOP is the use of ***'OBJECTS'*** which are instances of a class
 

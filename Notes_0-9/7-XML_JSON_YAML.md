@@ -1,12 +1,16 @@
 
-# 7-XML_JSON_YAML
+# 7-XML, JSON, AND YAML #
 _____________________________________________________
 
 ## PLAIN-TEXT DATA FOPMATS ##
 
 <!-- 2021-01-07 00:40:36 -->
 
-Why use Plain-text data formats?
+<p align=center>
+    <img src="../Images/data-formats.png">
+</p>
+
+**Why use Plain-text data formats?**
 
 - Human-readable
 - COmputer-readable

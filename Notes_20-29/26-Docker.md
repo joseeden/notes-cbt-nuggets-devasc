@@ -6,7 +6,7 @@ ______________________________________________________________
 ## VIRTUAL MACHINES vs. CONTAINERS ##
 
 <p align="center">
-    <img src="Images/containers-vm.jpeg">
+    <img src="../Images/containers-vm.jpeg">
 </p>
 
 <dl>
@@ -341,9 +341,9 @@ After containerizing our application, we can now deploy our application to docke
 
 Once you have your account setup, create a repository.
 
-![](Images/dockerhub.png)
+![](../Images/dockerhub.png)
 
-![](Images/docker_repo.png)
+![](../Images/docker_repo.png)
 
 <br>
 Going back to your terminal, stop the running containers first

@@ -4,6 +4,10 @@ _____________________________________________________________
 
 <!--  2021-01-10 23:49:07 -->
 
+<p align=center>
+    <img src="../Images/rest-3.jpg">
+</p>
+
 In the traditional model, URL would look something like this:
 
     https://www.website.com/folder1/folder2/list-est.html
@@ -26,7 +30,11 @@ ________________________________________________________
 ## API ##
 
 A way for a computer program to communicate directly with another program. This is how softwares talk to each other.
-<br>
+
+<p align=center>
+    <img src="../Images/rest-1.png">
+</p>
+
 
 **RESTful API**
 

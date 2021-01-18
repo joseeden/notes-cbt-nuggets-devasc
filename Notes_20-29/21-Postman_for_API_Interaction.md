@@ -1,12 +1,17 @@
 
-# 21-Postman_for_API_Interaction
+# 21 - Postman for API interaction #
 ________________________________________________________
 
 <!-- 2021-01-13 22:06:00 -->
 
 ## POSTMAN ##
 
-Popular API testing tool. Download the Postman Desktop App [here](https://www.postman.com/downloads/)
+Popular API testing tool. Download the Postman Desktop App [here](https://www.postman.com/downloads/). 
+
+<p align=center>
+    <img src="../Images/postman.jpeg">
+</p>
+
 Install it, then sign-in/create an account.
 
 Select 'New' request and then create new collection if there's no existing collection. 
@@ -159,7 +164,7 @@ This will open a new window - **'Collection Runner'**
 Here you can choose how you want to run the requests.
 <br>
 
-**POSTMAN SCRIPTS **
+**POSTMAN SCRIPTS**
 Postman integrates an engine that allows you to execute scripts - before request is executed and after response is received. This scripts are written in Javascript.
 
 This are called **PRE-REQUEST SCRIPTS** and **POST-REQUEST SCRIPTS**. 

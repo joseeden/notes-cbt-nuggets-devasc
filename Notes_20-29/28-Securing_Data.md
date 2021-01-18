@@ -1,5 +1,5 @@
 
-## 28 - Securing Data in your Applications ##
+# 28 - Securing Data in your Applications #
 _____________________________________________________________
 
 <!-- 2021-01-17 21:20:20 -->
@@ -7,7 +7,7 @@ _____________________________________________________________
 ## RESTING OR MOVING ##
 
 <p align="center">
-    <img src="Images/data-rest-motion.png">
+    <img src="../Images/data-rest-motion.png">
 </p>
 
 **DATA IN TRANSIT**
@@ -29,7 +29,7 @@ ________________________________________________________
 This involves hasing usernames and passwords instead of them appearing in clear text. A tool which can sniff information and traffic across a network is **Wireshark**.
 
 <p align="center">
-    <img src="Images/Wireshark.png">
+    <img src="../Images/Wireshark.png">
 </p>
 
 ______________________________________________________________
@@ -93,19 +93,19 @@ Disk encryption is usually built on the operating system. This works by taking a
 In Windows, we can use **Bitlocker**.
 
 <p align="center">
-    <img src="Images/bitlocker.png">
+    <img src="../Images/bitlocker.png">
 </p>
 
 In MacOS, you can use **FileVault**.
 
 <p align="center">
-    <img src="Images/filevault.png">
+    <img src="../Images/filevault.png">
 </p>
 
 Since Linux is open source, anyone can implement their own encrypting solution. One of the popular option is called **Tomb**
 
 <p align="center">
-    <img src="Images/tomb.png">
+    <img src="../Images/tomb.png">
 </p>
 
 
@@ -114,5 +114,5 @@ For databases such as **SQL Server**, database encryption works by generating a 
 
 
 <p align="center">
-    <img src="Images/sql-server-tde.png">
+    <img src="../Images/sql-server-tde.png">
 </p>

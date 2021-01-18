@@ -9,7 +9,7 @@ _________________________________________________________
 A set of practices on how to deliver IT services. This include deploying software, infrastructure, networking etc.
 
 <p align="center">
-    <img src="Images/devops.jpg">
+    <img src="../Images/devops.jpg">
 </p>
 
 Main concepts:

@@ -1,11 +1,15 @@
 
-# 2 - Design Patterns
+# 2 - Design Patterns #
 ____________________________________________________________
 
 <!--  2021-01-04 04:48:04 -->
 
 ## DESIGN PATTERNS ##
-
+<br>
+<p align=center>
+    <img src="../Images/design-pattern.jpg">
+</p>
+<br>
 A pattern or a series of plot points that you're program will go through. By doing so, you can be sure you can arrive at the expected outcome.
 
 A design pattern is **NOT A CODE**.
