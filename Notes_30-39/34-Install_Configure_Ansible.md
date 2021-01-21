@@ -90,7 +90,7 @@ _________________________________________________________
 
 *I also created a vpc, a single subnet,route table, and an internet gateway in AWS for this lab.*
 
-<p align=centere>
+<p align=center>
     <img src="../Images/ansible-install.png">
 </p>
 
@@ -211,7 +211,7 @@ ________________________________________________________
 
 Ansible uses an **Inventory file** - contains data about all the servers and devices that it needs to manage.
 
-<p align=centere>
+<p align=center>
     <img src="../Images/ansible-inventory.png">
 </p>
 
