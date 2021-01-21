@@ -1,0 +1,16 @@
+---
+- name: Loops Demo
+  hosts: host-ubuntu
+  tasks:
+
+    - name: Create a file
+      shell: echo "Begin file" > /home/{{ansible_user_id}}/loops.txt
+    
+    - name: Install packages
+      shell: echo "{{item}}" >> /home/{{ansible_user_id}}/loops.txt
+
+      # this is basically same as 'for x in items'
+      with_items:
+        - vim
+        - nano
+        - python

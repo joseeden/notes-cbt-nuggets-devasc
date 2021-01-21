@@ -1,0 +1,9 @@
+---
+- name: Variable demo
+  hosts: serverslinux
+  vars:
+    - var1: Peterpan
+    - var2: merry-go-round
+  tasks:
+    - name: Print data
+    - shell: echo "{{var1}} went for a ride on the {{var2}}" > /home/eden/vars.txt

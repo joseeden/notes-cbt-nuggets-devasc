@@ -1,0 +1,15 @@
+---
+- name: Conditions Demo 1 - Installing NGINX
+  become: true
+  hosts: serverslinux
+  tasks:
+
+    - name: Install NGINX on host-ubuntu
+      apt: name=nginx state=latest
+      register: result
+      ignore_errors: true
+
+    - name: Install NGINX on host-centos
+      # yum: name=epel-release
+      yum: name=nginx
+      when: result is failed

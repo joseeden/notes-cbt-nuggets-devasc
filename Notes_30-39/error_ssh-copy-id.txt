@@ -1,0 +1,39 @@
+
+2021-01-20 20:35:08
+
+error_ssh-copy-id.txt
+_________________________________________________
+
+EDEN: Do the following steps on the machine where you'll copy the ssh keys to.
+
+Useful links:
+
+https://www.digitalocean.com/community/questions/ssh-copy-id-not-working-permission-denied-publickey
+
+https://superuser.com/questions/890128/ssh-copy-id-public-key-denied
+_________________________________________________
+
+https://www.digitalocean.com/community/questions/ssh-copy-id-not-working-permission-denied-publickey
+
+mjmare March 19, 2017
+I had trouble using ssh-copy-id for a secondary (non-root) user. ssh-copy-id uses the user’s password to connect to the host. New droplets seem to have a setting that prohibits this. I’m not an expert so don’t take my word for it.
+
+I fixed it like this:
+
+Log in as root
+Edit ssh config:
+sudo nano /etc/ssh/sshd_config
+Change this line:
+PasswordAuthentication no
+to
+PasswordAuthentication yes
+Restart daemon:
+sudo systemctl restart sshd
+
+Do ssh-copy-id:
+ssh-copy-id someuser@<my-ip>
+
+Revert changes to ssh_config if you are security conscious and restart daemon.
+_________________________________________________
+
+SOLUTION 2

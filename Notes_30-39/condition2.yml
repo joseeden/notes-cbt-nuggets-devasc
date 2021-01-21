@@ -1,0 +1,14 @@
+---
+- name: Conditions Demo 2 - Uninstalling NGINX
+  become: true
+  hosts: serverslinux
+  tasks:
+
+    - name: Uninstall NGINX on host-ubuntu
+      apt: name=nginx state=absent
+      when: ansible_os_family == "Debian"
+    
+    - name: Uninstall NGINX on host-centos
+      yum: name=nginx state=absent
+      when: ansible_os_family == "RedHat"
+    

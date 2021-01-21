@@ -1,0 +1,21 @@
+
+2021-01-20 21:43:15
+
+changing_default_system_username_ec2.txt
+
+________________________________________________
+
+EDEN:
+I used 3 AWS EC2 linux instances for the ansible lab in the CBT Nuggets -DevAsc course.
+To set same username across all 3 machines, I used the script below and paste in he User-data field during the creation fo the EC2 instance.
+
+________________________________________________
+
+https://askubuntu.com/questions/261824/how-to-change-the-default-user-name-from-ubuntu-to-something-else-on-ec2-ami
+
+You can use the EC2 user data to do so. Simply launch an AWS instance and place the following in the user data field:
+
+#cloud-config
+system_info:
+  default_user:
+    name: eden

@@ -1,0 +1,8 @@
+---
+- name: Get stats then write to textfile
+  hosts: serverslinux
+  tasks:
+    - name: get system status and info
+      shell: uname -a > /home/eden/task-output.txt
+    - name: print username
+      shell: whoami >> /home/eden/task-output.txt
