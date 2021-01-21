@@ -90,7 +90,10 @@ _________________________________________________________
 
 *I also created a vpc, a single subnet,route table, and an internet gateway in AWS for this lab.*
 
-<br>
+<p align=centere>
+    <img src="../Images/ansible-install.png">
+</p>
+
 Begin by installing all the pre-requisite packages and libraries. Also make sure to update the base OS
 
 ```bash
@@ -208,6 +211,10 @@ ________________________________________________________
 
 Ansible uses an **Inventory file** - contains data about all the servers and devices that it needs to manage.
 
+<p align=centere>
+    <img src="../Images/ansible-inventory.png">
+</p>
+
 To create/modify the inventory file:
 
     sudo nano /etc/ansible/hosts
@@ -266,6 +273,10 @@ _________________________________________________________
 ## MODULES ##
 
 Ansible, in its very core, is just *pre-built python scripts.*. These pre-built python scripts are called **modules**. We've already test this when we used the *ping* module earlier.
+
+<p align=center>
+    <img src="../Images/ansible-modules.png">
+</p>
 
 We can test another script by checking the uptime of all our hosts using a raw module.
 
@@ -327,9 +338,17 @@ ________________________________________________________________
 
 ## THE ANSIBLE PLAYBOOK ##
 
+<p align=center>
+    <img src="../Images/ansible-playbook-1.png">
+</p>
+
 Ansible works by running *'plays'* against the devices you specify, which in turn run the modules you also specified on thos devices. These plays are all described in the **playbook**.
 
 A **Playbook** is a YAML file which outlines all the instructions to run the plays.
+
+<p align=center>
+    <img src="../Images/ansible-playbook-3.png"
+</p>
 
 *EDEN: YAML basics id discussed in Ben Finkel's section for Plain-text Data Formats. You can check out the notes [here](../Notes_0-9/7-XML_JSON_YAML.md)*
 
@@ -436,6 +455,10 @@ ________________________________________________________________
 
 Here we'll be utilizing **static variables** which we can use when we move between devices.
 
+<p align=centere>
+    <img src="../Images/variable-4.png">
+</p>
+
 As an example, the [variable.yml](variable.yml) below shows a demo on how we'll write variables onto a text files on the device themselves. 
 
 We specify the variables under the **vars** keyword. To use variables in the actual commans, we denote them by enclosing them in **{{}}**.
@@ -487,6 +510,10 @@ Here we see that it has successfully performed the two tasks. But what does the 
 **GATHERING FACTS**
 
 When ansible connects to the hosts or devices, it gathers system information on each one and base the execution of the tasks on those information.
+
+<p align=center>
+    <img src="../Images/facts-2.png">
+</p>
 
 As an example, the main difference between Centos distros and Debian distros is the **package manager** being used. CentOS and RHEL uses **yum** to install packages while Ubuntu uses **apt**.
 
@@ -617,6 +644,10 @@ ________________________________________________________________
 ## CONDITIONALS ##
 
 How **Conditionals** work in ansible is just similar on how conditionals work on any programming languages. The execution of code is based on the specified conditions
+
+<p align=center>
+    <img src="../Images/conditionals.png">
+</p>
 
 Below we have the [condition.yml](condition.yml) file where we'll be installing packages. 
 
@@ -812,6 +843,10 @@ _________________________________________________________________
 ## LOOPS ##
 
 Ansible can handle loops with different variables passed onto it, the same way that any programming language do.
+
+<p align=center>
+    <img src="../Images/loops.png">
+</p>
 
 In the sample [loops.yml](loops.yml) below, we can see that second task - Install packages make use of loops through the use of **with items**.
 
